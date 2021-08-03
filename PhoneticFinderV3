@@ -7,11 +7,11 @@
 <body>
 <h1>If no prompt is presented, refresh the page or disable your adblocker.</h1>
 	<script>
-    var x = 
-    document.createElement("INPUT");
-    x.setAttribute("type", "text");
+  	  var x = 
+ 	   document.createElement("INPUT");
+ 	   x.setAttribute("type", "text");
 		var letter=prompt("Enter a letter to get its NATO Phonetic designation")
-        var dict = {
+	var dict = {
             "a": "Alpha",
             "b": "Bravo",
             "c": "Charlie",
@@ -47,14 +47,14 @@
             "7": "Seven",
             "8": "Eight",
             "9": "Niner",
-	          "0": "Zeero"
+	    "0": "Zeero"
         };
         var selector = letter.toLowerCase();
         if (selector in dict) {
-            alert ("Phonetically, " + selector.toUpperCase()+ " is " + dict[selector]);		
+    	alert ("Phonetically, " + selector.toUpperCase()+ " is " + dict[selector]);		
         }
         else {
-            alert( letter + " is not a valid input, enter a single letter.")
+    	alert( letter + " is not a valid input, enter a single letter.")
         }
         window.location.reload(true);
 	</script>
